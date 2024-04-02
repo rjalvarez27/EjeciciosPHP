@@ -83,6 +83,19 @@ if($mes =="diciembre" or $mes=="enero" or $mes== "febrero"){
 }elseif($mes =="septiembre" or $mes=="octubre" or $mes== "noviembre"){
     echo "<br>"."5)". " " .$mes ." ". " es otoño";
 }
+
+$Mesactual=DATE("m");     
+IF ($Mesactual>="03" && $Mesactual<="05")
+$Estacion = "primavera";
+ELSEIF ($Mesactual>="06" && $Mesactual<="08")
+$Estacion = "verano";
+ELSEIF ($Mesactual>="09" && $Mesactual<="11")
+$Estacion = "otono";
+ELSE
+$Estacion = "invierno";
+
+echo $Estacion;
+s
 ?>;
 
 
