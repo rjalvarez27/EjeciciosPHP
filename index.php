@@ -84,7 +84,7 @@ if($mes =="diciembre" or $mes=="enero" or $mes== "febrero"){
     echo "<br>"."5)". " " .$mes ." ". " es otoño";
 }
 
-$Mesactual=DATE("m");     
+$Mesactual="enero";     
 
 switch ($Mesactual)
             {
