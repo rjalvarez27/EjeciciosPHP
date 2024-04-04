@@ -110,8 +110,6 @@ switch ($Mesactual)
                     break;
 
             }
-}
-
 ?>;
 
 
