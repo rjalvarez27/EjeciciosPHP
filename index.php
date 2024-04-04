@@ -85,17 +85,33 @@ if($mes =="diciembre" or $mes=="enero" or $mes== "febrero"){
 }
 
 $Mesactual=DATE("m");     
-IF ($Mesactual>="03" && $Mesactual<="05")
-$Estacion = "primavera";
-ELSEIF ($Mesactual>="06" && $Mesactual<="08")
-$Estacion = "verano";
-ELSEIF ($Mesactual>="09" && $Mesactual<="11")
-$Estacion = "otono";
-ELSE
-$Estacion = "invierno";
 
-echo $Estacion;
-s
+switch ($Mesactual)
+            {
+                case "enero":
+                case "febrero":
+                case "diciembre":
+                    echo "Es invierno";
+                    break;
+                case "marzo":
+                case "abril":
+                case "mayo":
+                      echo "Es Primavera";
+                    break;
+                case "Junio":
+                case "Julio":
+                case "agosto":
+                    echo "Es Verano";
+                    break;
+                case "septiembre":
+                case "octubre":
+                case "noviembre":
+                    echo "Es Otono";
+                    break;
+
+            }
+}
+
 ?>;
 
 
